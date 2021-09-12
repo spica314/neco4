@@ -1,6 +1,6 @@
 # neco4
 
-neco4: **ne**co is a **co**mpiler version 3
+neco4: **ne**co is a **co**mpiler version 4
 
 hobby compiler & language (Felis)
 
