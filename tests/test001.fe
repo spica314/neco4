@@ -1,0 +1,5 @@
+fn f (x: i<64>) -> i<64> {
+    const one: i<64> = 1;
+    let y: i<64> = __add x one;
+    return y;
+}
