@@ -27,6 +27,12 @@ pub enum Statement {
     Let(LetStatement),
     Const(ConstStatement),
     Return(ReturnStatement),
+    Param(ParamStatement),
+}
+
+pub struct ParamStatement {
+    pub ident: Ident,
+    pub ty: TypeSignature,
 }
 
 pub struct LetStatement {
