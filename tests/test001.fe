@@ -1,6 +1,8 @@
-fn f -> i 64 {
+fn f {
     param x: i 64;
     const one: i 64 = 1;
+    result res: i 64;
     let y: i 64 = __add x one;
-    return y;
+    res = y;
+    return;
 }

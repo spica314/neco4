@@ -4,8 +4,6 @@ pub struct File {
 
 pub struct FunDef {
     pub name: Ident,
-    pub params: Vec<Parameter>,
-    pub ret_ty: TypeSignature,
     pub statements: Vec<Statement>,
 }
 
@@ -28,6 +26,7 @@ pub enum Statement {
     Const(ConstStatement),
     Return(ReturnStatement),
     Param(ParamStatement),
+    Result(ResultStatement),
 }
 
 pub struct ParamStatement {
@@ -54,6 +53,11 @@ pub struct ConstStatement {
 
 pub struct ReturnStatement {
     pub ident: Ident,
+}
+
+pub struct ResultStatement {
+    pub ident: Ident,
+    pub ty: TypeSignature,
 }
 
 pub enum Token {
